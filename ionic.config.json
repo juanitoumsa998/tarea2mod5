@@ -1,0 +1,7 @@
+{
+  "name": "borrador5",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
