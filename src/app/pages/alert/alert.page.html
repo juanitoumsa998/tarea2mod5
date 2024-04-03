@@ -1,0 +1,26 @@
+<app-header titulo="Alert"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button id="present-alert">
+    <ion-alert
+              trigger="present-alert"
+              header="error de codigo"
+              subHeader=" Un subtitulo es opcional"
+              message="Un mensaje debe ser corto, pero de enfoque completo"
+              [buttons]="alertButtons"
+    ></ion-alert>
+    boton
+  </ion-button>
+  <ion-button (click)="presentAlert()" expand="block" >
+    Click me
+  </ion-button>
+  <ion-button id="presentAl">
+    Click me segundo
+  </ion-button>
+  <ion-alert 
+            trigger="presentAl"
+            header="Alerta guacho"
+            [buttons]="alertButton" 
+            (didDismiss)="setResult($event)"
+  ></ion-alert>
+</ion-content>

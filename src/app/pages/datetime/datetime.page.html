@@ -1,0 +1,24 @@
+<app-header titulo="Datetime"></app-header>
+
+<ion-content [fullscreen]="true">
+<ion-list-header>
+  <ion-label>Datos de nacimiento</ion-label>
+</ion-list-header>
+  <ion-item>
+    <ion-label>Fecha de nacimiento</ion-label>
+    <ion-datetime display-format="DD.MM.YYYY HH:mm"
+                  value="01-01-1990T00:00"
+                  min="01-01-1930T00:00"
+                  max="01-01-2024T00:00"
+    ></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+    <ion-modal [keepContentsMounted]="true">
+      <ng-template>
+        <ion-datetime id="datetime"></ion-datetime>        
+      </ng-template>
+    </ion-modal>
+  </ion-item>
+</ion-content>

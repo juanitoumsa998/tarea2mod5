@@ -1,0 +1,26 @@
+<app-header titulo="Action Sheet"></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button id="open-action-sheet">
+    Open
+  </ion-button>
+  <ion-action-sheet trigger="open-action-sheet" 
+                    header="Actions"
+                    [buttons]="actionSheetButtons">
+  </ion-action-sheet>
+  <ion-button id="open-action">
+    Open act
+  </ion-button>
+  <ion-action-sheet trigger="open-action" 
+                    header="Acciones de poder"
+                    [buttons]="actionShee">
+  </ion-action-sheet>
+  <ion-button id="actSheet" >
+    <ion-action-sheet
+                      trigger="actSheet"
+                      header="sin trigger"
+
+    ></ion-action-sheet>  
+  </ion-button>
+  
+</ion-content>
